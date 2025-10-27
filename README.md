@@ -1,27 +1,42 @@
-# Monorepo Scaffold: Server + Client
+# Ecommerce DBMS Mini Project
 
-This repository is organized as a small monorepo with two packages:
+Full-stack ecommerce application with:
+- **Backend**: Node.js + Express + TypeScript (port 5000)
+- **Frontend**: React + Vite + TypeScript (port 5173)
 
-- server: Node.js + Express + TypeScript
-- client: React + Vite + TypeScript
+## 🚀 Quick Start
 
-Both projects are self-contained. You can work on either independently.
+### Option 1: Run Everything at Once (Recommended)
 
-## Quick start
+From the root directory, run:
 
-Open two terminals:
+```bash
+npm run dev
+```
 
-1) Server (Express on port 5000)
+This will start both the backend and frontend in separate terminal windows.
 
-- cd server
-- npm install
-- npm start
+### Option 2: Run Servers Separately
 
-2) Client (Vite dev server on port 5173)
+**Terminal 1 - Backend:**
+```bash
+cd server
+npm install
+npm run dev
+```
 
-- cd client
-- npm install
-- npm start
+**Terminal 2 - Frontend:**
+```bash
+cd client
+npm install
+npm run dev
+```
+
+### Access the Application
+
+- **Frontend**: http://localhost:5173
+- **Backend API**: http://localhost:5000
+- **Health Check**: http://localhost:5000/health
 
 ## Environment variables
 
